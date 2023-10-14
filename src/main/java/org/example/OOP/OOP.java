@@ -3,13 +3,13 @@ package org.example.OOP;
 public class OOP {
     public static void main(String[] args) {
 
-        Box myBox = new Box();
+        Box myBox = new Box(2, 4, 7);
         myBox.height = 10.2;
         myBox.length = 15;
         myBox.width = 11.3;
 
-        Box box2 = new Box();
-        Box box3 = new Box();
+        Box box2 = new Box(1, 5, 9);
+        Box box3 = new Box(66, 3, 2);
 
         box2.width = 5;
         box2.length = 5;
@@ -52,8 +52,8 @@ public class OOP {
         double avgAge = (double) (human.age + human1.age + human2.age + human3.age + human4.age) / 5;
         System.out.println(avgAge);
 
-        Box box = new Box();
-        Box box1 = new Box();
+        Box box = new Box(10, 15, 20);
+        Box box1 = new Box(10, 23, 34);
 
         box.length = 5;
         box.height = 5;
@@ -78,9 +78,21 @@ public class OOP {
         dog.run();
         System.out.println(dog.info());
 
-        Box box4 =new Box();
-        box4.setDimens(15,15,15);
+        Box box4 = new Box(1, 22, 14);
+        box4.setDimens(15, 15, 15);
         System.out.println(box4.volume1());
+
+        Rect rect = new Rect();
+        rect.setParams(4.6, 6);
+        System.out.println(rect.perimeter());
+        System.out.println(rect.square());
+
+        Box box5 = new Box(10, 15, 20);
+        System.out.println(box5.volume1());
+
+        Worker worker = new Worker("Иван", "Дизайнер", 120000);
+        worker.getInfo(12);
+
 
     }
 }

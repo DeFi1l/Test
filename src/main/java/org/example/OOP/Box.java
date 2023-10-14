@@ -5,6 +5,12 @@ public class Box {
     double height;
     double length;
 
+    Box(double width, double height, double length) {
+        this.width = width;
+        this.height = height;
+        this.length = length;
+    }
+
     void showVolume() {
         double volume = width * height * length;
         System.out.println(volume);
