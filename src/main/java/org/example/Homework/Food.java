@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Homework;
 
 public class Food {
     public static void main(String[] args) {

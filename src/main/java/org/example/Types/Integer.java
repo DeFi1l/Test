@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Types;
 
 public class Integer {
     public static void main(String[] args) {

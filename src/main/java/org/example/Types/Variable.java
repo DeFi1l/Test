@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Types;
 
 public class Variable {
     public static void main(String[] args) {
