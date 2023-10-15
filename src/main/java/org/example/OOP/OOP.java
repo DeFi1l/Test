@@ -103,6 +103,37 @@ public class OOP {
         box7.showVolume();
         Box box8 = new Box();
         box8.showVolume();
+        box6.compare(box7);
+
+        Box box9 = new Box(box8);
+        box8.setDimens(100, 100, 100);
+        int result1 = box9.compare(box8);
+        switch (result1) {
+            case -1:
+                System.out.println("Наша коробка меньше");
+                break;
+            case 1:
+                System.out.println("Наша коробка больше");
+                break;
+            case 0:
+                System.out.println("Наши коробки равны");
+                break;
+        }
+        Box box10 = box9.increase(2);
+        box9.setDimens(10, 10, 10);
+        box9.showVolume();
+        box10.showVolume();
+
+        Box box11 = new Box(10);
+        Box box12 = new Box(10, 15, 20);
+        Box box13 = box11.sumBox(box12);
+        Box box14 = new Box(box11, box13);
+        box11.showVolume();
+        box12.showVolume();
+        box13.showVolume();
+        double volumeSum = box11.volume() + box13.volume();
+        System.out.println("box11 + box13 = " + volumeSum);
+        box14.showVolume();
 
         Monster monster = new Monster();
         monster.voice();

@@ -43,4 +43,5 @@ public class Monster {
             System.out.println(word);
         }
     }
+
 }
