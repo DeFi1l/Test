@@ -104,5 +104,25 @@ public class OOP {
         Box box8 = new Box();
         box8.showVolume();
 
+        Monster monster = new Monster();
+        monster.voice();
+        monster.voice(8);
+        monster.voice(4);
+
+        Monster monster1 = new Monster(4);
+        monster1.voice();
+        monster1.voice(8);
+        monster1.voice(4, "Берсерк");
+
+        Monster monster2 = new Monster(5, 4);
+        monster2.voice();
+        monster2.voice(8);
+        monster2.voice(2, "Цербер");
+
+        Monster monster3 = new Monster(2, 5, 6);
+        monster3.voice();
+        monster3.voice(8);
+        monster3.voice(5, "Вервульф");
+
     }
 }
