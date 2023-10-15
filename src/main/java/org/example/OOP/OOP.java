@@ -65,8 +65,8 @@ public class OOP {
 
         box1.showVolume();
         box.showVolume();
-        double volumebox1 = box1.volume1();
-        double volumebox = box.volume1();
+        double volumebox1 = box1.volume();
+        double volumebox = box.volume();
 
         System.out.println(volumebox);
         System.out.println(volumebox1);
@@ -80,7 +80,7 @@ public class OOP {
 
         Box box4 = new Box(1, 22, 14);
         box4.setDimens(15, 15, 15);
-        System.out.println(box4.volume1());
+        System.out.println(box4.volume());
 
         Rect rect = new Rect();
         rect.setParams(4.6, 6);
@@ -88,11 +88,21 @@ public class OOP {
         System.out.println(rect.square());
 
         Box box5 = new Box(10, 15, 20);
-        System.out.println(box5.volume1());
+        System.out.println(box5.volume());
 
         Worker worker = new Worker("Иван", "Дизайнер", 120000);
         worker.getInfo(12);
 
+
+        int result = Test.multiple(5);
+        System.out.println(result);
+
+        Box box6 = new Box(10);
+        Box box7 = new Box(15, 20, 25);
+        box6.showVolume();
+        box7.showVolume();
+        Box box8 = new Box();
+        box8.showVolume();
 
     }
 }

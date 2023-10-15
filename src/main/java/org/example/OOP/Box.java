@@ -11,12 +11,24 @@ public class Box {
         this.length = length;
     }
 
-    void showVolume() {
-        double volume = width * height * length;
-        System.out.println(volume);
+    Box(double size) {
+        width = size;
+        height = size;
+        length = size;
     }
 
-    double volume1() {
+    Box() {
+        width = 0;
+        height = 0;
+        length = 0;
+    }
+
+    void showVolume() {
+
+        System.out.println(volume());
+    }
+
+    double volume() {
         return width * height * length;
     }
 
