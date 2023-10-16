@@ -155,5 +155,9 @@ public class OOP {
         monster3.voice(8);
         monster3.voice(5, "Вервульф");
 
+        Man man = new Man("Иван", 27);
+        System.out.println(man.getAge());
+        System.out.println(man.getName());
+
     }
 }
