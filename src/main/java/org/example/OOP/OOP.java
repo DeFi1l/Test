@@ -4,23 +4,23 @@ public class OOP {
     public static void main(String[] args) {
 
         Box myBox = new Box(2, 4, 7);
-        myBox.height = 10.2;
-        myBox.length = 15;
-        myBox.width = 11.3;
+        myBox.setWidth(10.2);
+        myBox.setLength(15);
+        myBox.setWidth(11.3);
 
         Box box2 = new Box(1, 5, 9);
         Box box3 = new Box(66, 3, 2);
 
-        box2.width = 5;
-        box2.length = 5;
-        box2.height = 5;
-        box3.height = 10;
-        box3.length = 10;
-        box3.width = 10;
+        box2.setWidth(5);
+        box2.setLength(5);
+        box2.setHeight(5);
+        box3.setHeight(10);
+        box3.setLength(10);
+        box3.setWidth(10);
 
-        double volume = myBox.height * myBox.length * myBox.width;
-        double volume2 = box2.height * box2.width * box2.length;
-        double volume3 = box3.height * box3.width * box3.length;
+        double volume = myBox.getHeight() * myBox.getLength() * myBox.getWidth();
+        double volume2 = box2.getHeight() * box2.getWidth() * box2.getLength();
+        double volume3 = box3.getHeight() * box3.getWidth() * box3.getLength();
         System.out.println("Объём коробки 1 = " + volume + "\nОбъём коробки 2 = " + volume2 + "\nОбъём коробки 3 = " + volume3);
 
         Human human = new Human();
@@ -55,13 +55,13 @@ public class OOP {
         Box box = new Box(10, 15, 20);
         Box box1 = new Box(10, 23, 34);
 
-        box.length = 5;
-        box.height = 5;
-        box.width = 5;
+        box.setLength(5);
+        box.setHeight(5);
+        box.setWidth(5);
 
-        box1.length = 10;
-        box1.height = 10;
-        box1.width = 10;
+        box1.setLength(10);
+        box1.setHeight(10);
+        box1.setWidth(10);
 
         box1.showVolume();
         box.showVolume();
