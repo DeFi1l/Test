@@ -171,5 +171,44 @@ public class OOP {
         int sum = MyMath.sum(1);
         System.out.println(sum);
 
+        String[] employees = {
+                "Никита",
+                "Игорь",
+                "Ольга",
+                "Вася",
+                "Макс"
+        };
+        String[] second = new String[employees.length + 1];
+        for (int i = 0; i < employees.length; i++) {
+            second[i] = employees[i];
+        }
+        second[second.length - 1] = "Иван";
+        employees = second;
+        employees[1] = null;
+        String[] newNames = new String[employees.length - 1];
+        for (int i = 0, j = 0; i < employees.length; i++) {
+            if (employees[i] != null) {
+                newNames[j] = employees[i];
+                j++;
+            }
+        }
+        employees = newNames;
+        for (String name : employees) {
+            System.out.println(name);
+        }
+
+        Collections employee = new Collections();
+        employee.add("Никита");
+        employee.add("Игорь");
+        employee.add("Ваня");
+        employee.add("Дима");
+        employee.add("Лена");
+        employee.add("Света");
+        employee.remove("Ваня");
+        employee.remove("Рома");
+        for (int i = 0; i < employee.getSize(); i++) {
+            System.out.println(employee.get(i));
+        }
+
     }
 }
