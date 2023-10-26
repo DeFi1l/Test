@@ -210,5 +210,14 @@ public class OOP {
             System.out.println(employee.get(i));
         }
 
+        Cat cat = new Cat();
+        Lion lion = new Lion();
+        System.out.println(lion.getEars());
+        System.out.println(cat.getLegs());
+        cat.showInfo();
+        lion.showInfo();
+        cat.eat();
+        lion.eat();
+
     }
 }
