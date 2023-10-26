@@ -34,6 +34,10 @@ public class Box {
         System.out.println(volume());
     }
 
+    public void showInfo() {
+        System.out.println("Длина коробки: " + getLength() + "Ширина коробки" + getWidth() + "Высота коробки" + getHeight());
+    }
+
     public double volume() {
         return width * height * length;
     }

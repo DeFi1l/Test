@@ -135,6 +135,14 @@ public class OOP {
         System.out.println("box11 + box13 = " + volumeSum);
         box14.showVolume();
 
+        BoxWeight boxWeight = new BoxWeight(2, 3, 4, 8);
+        boxWeight.showInfo();
+        BoxWeight boxWeight1 = new BoxWeight(3);
+        boxWeight1.showInfo();
+        BoxWeight boxWeight2 = new BoxWeight(4, 12);
+        boxWeight2.showInfo();
+
+
         Monster monster = new Monster();
         monster.voice();
         monster.voice(8);
