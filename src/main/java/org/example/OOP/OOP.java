@@ -306,5 +306,23 @@ public class OOP {
         for (CanCook cookk : cookers) {
             cookk.cook();
         }
+
+        Director director = new Director();
+
+        director.force(new Cookable() {
+            @Override
+            public void cook() {
+                System.out.println("Готовлю");
+            }
+        });
+
+        Director director1 = new Director();
+        director1.force1(new Counter() {
+            @Override
+            public String result(int months) {
+                return "Отчет за " + months + " месяцев";
+            }
+        }, 9);
+
     }
 }
