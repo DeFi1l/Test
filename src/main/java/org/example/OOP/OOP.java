@@ -1,5 +1,7 @@
 package org.example.OOP;
 
+import java.util.ArrayList;
+
 public class OOP {
     public static void main(String[] args) {
 
@@ -231,8 +233,29 @@ public class OOP {
         System.out.println(rectangle.square());
         Triangle triangle = new Triangle(2, 5, 8);
         System.out.println(triangle.square());
-        ColorRect colorRect = new ColorRect(2,5);
+        ColorRect colorRect = new ColorRect(2, 5);
         System.out.println(colorRect.square());
+
+
+        Dogg dogg1 = new Dogg();
+        Dogg dogg2 = new Dogg();
+        Dogg dogg3 = new Dogg();
+        Catt catt1 = new Catt();
+        Bird bird = new Bird();
+        ArrayList<CanRun> animals = new ArrayList<>();
+        animals.add(dogg1);
+        animals.add(catt1);
+        animals.add(bird);
+        animals.add(dogg1);
+        animals.add(dogg2);
+        for (CanRun animal : animals) {
+            animal.run();
+        }
+        CanRun canRun = dogg3;
+        dogg3 = (Dogg) canRun;
+        dogg3.eat();
+        Flyable flyable = new Bird();
+        flyable.fly();
 
     }
 }
