@@ -257,5 +257,54 @@ public class OOP {
         Flyable flyable = new Bird();
         flyable.fly();
 
+        Programmer programmer = new Programmer("Игорь");
+        Programmer programmer1 = new Programmer("Андрей");
+        Programmer programmer2 = new Programmer("Гена");
+        Driver driver = new Driver("Миша");
+        Driver driver1 = new Driver("Петя");
+        Driver driver2 = new Driver("Дима");
+        Cook cook = new Cook("Света");
+        Cook cook1 = new Cook("Таня");
+        Cook cook2 = new Cook("Оля");
+
+        ArrayList<Workerr> workerrs = new ArrayList<>();
+        workerrs.add(programmer1);
+        workerrs.add(programmer);
+        workerrs.add(programmer2);
+
+        workerrs.add(driver);
+        workerrs.add(driver1);
+        workerrs.add(driver2);
+
+        workerrs.add(cook);
+        workerrs.add(cook1);
+        workerrs.add(cook2);
+        for (Workerr workerr : workerrs) {
+            workerr.voice();
+        }
+
+        ArrayList<CanCode> programmers = new ArrayList<>();
+        programmers.add(programmer1);
+        programmers.add(programmer2);
+        programmers.add(programmer);
+        for (CanCode programer : programmers) {
+            programer.code();
+        }
+
+        ArrayList<CanDrive> drivers = new ArrayList<>();
+        drivers.add(driver1);
+        drivers.add(driver2);
+        drivers.add(driver);
+        for (CanDrive driverr : drivers) {
+            driverr.drive();
+        }
+
+        ArrayList<CanCook> cookers = new ArrayList<>();
+        cookers.add(cook);
+        cookers.add(cook1);
+        cookers.add(cook2);
+        for (CanCook cookk : cookers) {
+            cookk.cook();
+        }
     }
 }
