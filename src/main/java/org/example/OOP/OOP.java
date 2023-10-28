@@ -227,5 +227,12 @@ public class OOP {
         cat.eat();
         lion.eat();
 
+        Rectangle rectangle = new Rectangle(2, 6);
+        System.out.println(rectangle.square());
+        Triangle triangle = new Triangle(2, 5, 8);
+        System.out.println(triangle.square());
+        ColorRect colorRect = new ColorRect(2,5);
+        System.out.println(colorRect.square());
+
     }
 }
