@@ -17,6 +17,12 @@ public class Box {
         length = size;
     }
 
+    @Override
+    public String toString() {
+        String result = String.format("Ширина: %s\nДлина: %s\nВысота: %s", width, length, height);
+        return result;
+    }
+
     public Box() {
         width = 0;
         height = 0;

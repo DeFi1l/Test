@@ -1,5 +1,7 @@
 package org.example.OOP;
 
+import org.example.Test.Empty;
+
 import java.util.ArrayList;
 
 public class OOP {
@@ -136,6 +138,7 @@ public class OOP {
         double volumeSum = box11.volume() + box13.volume();
         System.out.println("box11 + box13 = " + volumeSum);
         box14.showVolume();
+        System.out.println(box);
 
         BoxWeight boxWeight = new BoxWeight(2, 3, 4, 8);
         boxWeight.showInfo();
@@ -323,6 +326,14 @@ public class OOP {
                 return "Отчет за " + months + " месяцев";
             }
         }, 9);
+
+        Empty empty = new Empty();
+        empty.toString();
+        System.out.println(empty);
+
+
+        int result2 = (int) (Math.random() * 6 + 1);
+        System.out.println(result);
 
     }
 }
